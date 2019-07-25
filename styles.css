@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+html {
+	scroll-behavior: smooth;
+}
+div.container {
+	display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;width:100%;
+	background-color: LimeGreen;
+	font-family: 'ABeeZee';
+}
+div.container > * {
+    padding: 0px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+/*MENU*/
+div.menucontainer {
+	background-color: violet;
+    font-weight: bolder;
+    font-variant: small-caps;
+	margin: 0;
+	padding: 0;
+	width: 20%;
+	max-width: 20%;
+	height: 100vh;
+	max-height: 100vh;
+	top: 0;
+	position: sticky;
+	position: -webkit-sticky;
+	float: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+div#side {
+	overflow-y: scroll;
+}
+div#top {
+	overflow: visible;
+}
+div#overlayed, div#top { display: none; }
+div#side {
+	display: block;
+}
+div.menucontainer ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+li.menuunit {
+	margin: 0;
+	padding: 0;
+}
+li.menuunit a {
+	display: block;
+	color: white;
+	font-size: 25px;
+	text-align: right;
+	padding: 30px;
+	text-decoration: none;
+  	font-weight: bold;
+	text-shadow: 1.5px 2px mediumpurple;
+	transition-duration: 0.3s;
+	transition-property: background-color;
+}
+li.menuunit a:hover {
+	background-color: mediumpurple;
+}
+li.menuunit a:active {
+	background-color: purple;
+}
+div.menuspacer{
+	height: 0;
+}
+/*DROP MENU*/
+/*main menu button*/
+li#menulogo {
+	display: block;
+	color: white;
+	font-size: 15px;
+	font-weight: bolder;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	float: left;
+}
+/*li#dropmenuunit:hover div.dropdown-content {
+	display: block;
+}*/
+li#dropmenuunit{
+	float: right;
+}
+button.dropbtn {
+    background-color: violet;
+    border: none;
+    color: white;
+    cursor: pointer;
+	display: block;
+	font-family: 'ABeeZee';
+	font-size: 15px;
+	font-variant: small-caps;
+	font-weight: bold;
+	outline: none;
+	padding: 15px;
+	user-select: none;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1.5px mediumpurple;
+	transition-duration: 0.3s;
+	transition-property: background-color;
+}
+button.dropbtn:hover {
+	cursor: pointer;
+	background-color: mediumpurple;
+}
+button.dropbtn:active {
+	cursor: pointer;
+	background-color: purple;
+}
+/*drop menu*/
+.dropdown-content {
+	right: 0;
+    display: block;
+    position: absolute;
+    width: auto;
+    height: 0;
+    background-color: violet;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition-duration: 0.5s;
+    transition-property: height,opacity;
+    opacity: 0;
+    overflow: hidden;
+    transform-style: ease-out;
+}
+.show {
+	display:block;
+	animation-name: slideDown;
+	animation-duration: 2s;
+	animation-delay: 0;
+}
+@keyframes slideDown {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+/*END DROP MENU*/
+/*STICKY MENU*/
+.sticky {
+	position: fixed;
+	top: 0;
+}
+/*END STICKY MENU*/
+
+/*MOUSE*/
+div.mousechaser {
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+}
+
+/*CONTENT BOXES*/
+div#content {
+	margin: 0;
+	padding: 0;
+	width: 80%;
+	max-width: 80%;
+	float: right;
+}
+div#content a {
+	color: firebrick;
+}
+div#content a:hover {
+	color: crimson;
+}
+h2.sectionheader {
+	font-size: 40px;
+	margin: 0px;
+	padding: 20px;
+	text-align: left;
+	text-shadow: 3px 3px 8px violet;
+	font-variant: small-caps;
+}
+div.boxedinfo {
+	background-color: rgba(255,255,255,0.357);
+	padding: 50px;
+	margin: 0 15px;
+	border: 0.4px solid purple;
+	overflow-x: hidden;
+	text-align: left;
+}
+div.boxedinfo h3 {
+	font-size: 30px;
+	margin: 0;
+}
+div.boxeddetails {
+	margin-left: 30px;
+}
+p { font-size: 20px; }
+header, footer {
+	color: white;
+	background-color: DarkGreen;
+}
+header {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+header h1 {
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 0.5px 5px 15px purple;
+	padding: 0;
+	margin: 10;
+}
+footer {
+	font-size: 18px;
+	text-align: right;
+}
+nav {  }
+
+/*WIDGETS*/
+.iconlink {
+	opacity: 0.8;
+	transition-duration: 0.3s;
+	transition-property: opacity;
+	z-index: 0;
+}
+.iconlink:hover {
+	opacity: 1;
+}
+.iconlink:active {
+	opacity: 0.3;
+}
+
+/*SIZE ADJUSTMENTS*/
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  header#header, div.menucontainer, div#content {
+  	margin-left: 0;
+    max-width: 100%;
+    width:100%;
+	height: auto;
+	right: 0;
+  }
+  header h1 {
+  	font-size: 40px;
+  }
+  div.boxedinfo {
+  	padding: 20px;
+  }
+  div.boxeddetails {
+  	margin-left: 0;
+  }
+  div#side, div#overlayed { display: none; }
+  div#top { display: inline; }
+  div.menuspacer{
+  	height: 8vw;
+  }
+  div.menucontainer ul#nojs {
+    float: right;
+    position: relative;
+    right: 50%;
+  }
+  li.menuunit a {
+  	font-size: 12px;
+  	padding: 20px;
+  	text-align: left;
+  	text-shadow: 1px 1.5px mediumpurple;
+  }
+  li.menuunitnojs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	left: 50%;
+  }
+  li.menuunitnojs a {
+  	display: block;
+	color: white;
+	font-size: 10px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+  	transition-duration: 0.3s;
+  	transition-property: background-color;
+  }
+  li.menuunitnojs a:hover {
+  	background-color: mediumpurple;
+  }
+  li.menuunitnojs a:active {
+  	background-color: purple;
+  }
+  footer {
+  	text-align: center;
+  	font-size: 15px;
+  }
+}
+@media only screen and (max-width:1100px) and (min-width:620px) {
+  /* For compact view: */
+  /* http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support */
+  header#header, div.menucontainer, div#content {
+  	margin-left: 0;
+    max-width: 100%;
+    width:100%;
+	height: auto;
+	right: 0;
+  }
+  header h1 {
+  	font-size: 50px;
+  }
+  div.boxedinfo {
+  	padding: 20px;
+  }
+  div.boxeddetails {
+  	margin-left: 30px;
+  }
+  div#side, div#top { display: none; }
+  div#overlayed { display: inline; }
+  div.menuspacer {
+  	height: 50px;
+  }
+  div.menucontainer ul {
+    float: right;
+    position: relative;
+    right: 50%;
+  }
+  li.menuunit{
+	float: left;
+	position: relative;
+	left: 50%;
+  }
+  li.menuunit a {
+  	font-size: 13px;
+  	padding: 20px 14px;
+  	text-align: center;
+  	text-shadow: 1px 1.5px mediumpurple;
+  }
+  footer{
+	text-align: center;
+	font-size: 15px;
+  }
+}
