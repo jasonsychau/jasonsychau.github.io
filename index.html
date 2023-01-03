@@ -1,164 +1,397 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128989854-2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128989854-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-	  gtag('config', 'UA-128989854-2');
-	</script>
-	<meta charset="utf-8">
-	<meta name="author" content="Jason Chau">
-	<meta name="description" content="Jason's Personal Webpage">
-	<meta
-		name="keywords"
-		content="personal,portfolio,projects,jason,chau,display,computerscience,computer science,dataanalysis,data analysis,datamining,data mining,artificialintelligence,artificial intelligence,machinelearning,machine learning,statistics,numericalanalysis,numerical analysis,employment,iOS,android,Android,mobile,app,website,softwaredevelopment,software development,software,softwareengineering,software engineering,programming,computerprogramming,computer programs,doublemajor,double major"
-	>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Strict-Transport-Security" content="max-age=1000; includeSubDomains; preload">
-	<meta http-equiv="Content-Security-Policy" content="base-uri 'none'; child-src 'self'; connect-src https://www.google-analytics.com/; default-src 'self'; font-src 'self'; form-action 'self'; frame-src 'none'; img-src 'self' https://www.google-analytics.com; manifest-src 'none'; media-src 'none'; object-src 'none'; prefetch-src 'none'; script-src 'self' https://www.googletagmanager.com/gtag/js https://www.google-analytics.com/analytics.js 'unsafe-inline'; script-src-elem 'self' https://www.google-analytics.com/analytics.js; script-src-attr 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; worker-src 'none'; upgrade-insecure-requests;" >
-	<meta http-equiv="Cache-Control" content="max-age=31536000, public, immutable">
-	<title>Jason's Portfolio</title>
-    <meta name="author" content="Jason Chau"> 
-	<!-- <link rel="shortcut icon" href=""> -->
-	<style type="text/css">
-		body {
-			font-size: 18px;
-			background-color: lightgreen;
-			color: purple;
-			margin: 0;
-			padding: 0 45px;
-			/*background: linear-gradient(limegreen, lightgreen);*/
-			font-family: 'Tw Cen MT', sans-serif;
-		}
-		header {
-			text-align: center;
-			padding: 20px;
-			padding-top: 30px;
-			overflow: hidden;
-		}
-		h1 {
-			margin: 0;
-		}
-		h3 {
-			margin: 0;
-		}
-		ul {
-			margin: 0;
-		}
-		li {
-			margin: 0;
-			list-style: square outside none;
-			display: list-item;
-		}
-		body a {
-			color: firebrick;
-		}
-		body a:hover {
-			color: crimson;
-		}
-		div#content {
-			padding: 0 0;
-		}
-		div#content h3 {
-			/*padding-bottom: 10px;*/
-		}
-		div#content li {
-			padding: 5px 0;
-			color: firebrick;
-		}
-		div#content ul ul li {
-			padding: 0;
-			color: purple;
-		}
-		button.expandable {
-			overflow: hidden;
-			text-align: left;
-			background-color: rgba(0,0,0,0);
-			/*outline: none;*/
-			font-family: inherit;
-			font-size: inherit;
-			border: none;
-			display: block;
-			padding: 0;
-		}
-		/*@supports(-ms-ime-align:auto) {
-			button.expandable {
-				margin-top: -21px;
-			}
-		}*/
-		_:-ms-lang(x), _:-webkit-full-screen, button.expandable {
-			margin-top: -21px;
-		}
-		button.expandable ul {
-			display: none;
-		}
-		button.expandable:hover ul {
-			display: block;
-		}
-		button.expandable:focus ul {
-			display: block;
-		}
-		span#exitsection {
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-end;
-			font-size: 23px;
-			padding: 10px;
-			overflow: hidden;
-		}
-		footer {
-			text-align: center;
-			font-size: 15px;
-			padding: 10px 0;
-			overflow: hidden;
-		}
-	</style>
+    gtag('config', 'UA-128989854-2');
+  </script>
+  <meta charset="utf-8">
+  <meta name="author" content="Jason Chau">
+  <meta name="description" content="Jason's Personal Webpage">
+  <meta
+      name="keywords"
+      content="personal,portfolio,projects,jason,chau,display,computerscience,computer science,dataanalysis,data analysis,datamining,data mining,artificialintelligence,artificial intelligence,machinelearning,machine learning,statistics,numericalanalysis,numerical analysis,employment,iOS,android,Android,mobile,app,website,softwaredevelopment,software development,software,softwareengineering,software engineering,programming,computerprogramming,computer programs,doublemajor,double major"
+  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=1000; includeSubDomains; preload">
+  <meta http-equiv="Content-Security-Policy" content="base-uri 'none'; child-src 'self'; connect-src https://www.google-analytics.com/; default-src 'self'; font-src 'self'; form-action 'self'; frame-src 'none'; img-src 'self' https://www.google-analytics.com; manifest-src 'none'; media-src 'none'; object-src 'none'; prefetch-src 'none'; script-src 'self' https://www.googletagmanager.com/gtag/js https://www.google-analytics.com/analytics.js 'unsafe-inline'; script-src-elem 'self' https://www.google-analytics.com/analytics.js; script-src-attr 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; worker-src 'none'; upgrade-insecure-requests;" >
+  <meta http-equiv="Cache-Control" content="max-age=31536000, public, immutable">
+  <title>Jason's Portfolio</title>
+  <meta name="author" content="Jason Chau"> 
+  <!-- <link rel="shortcut icon" href=""> -->
+  <style type="text/css">
+    body {
+      font-size: 18px;
+      background-color: lightgreen;
+      color: purple;
+      padding: 0 45px;
+      font-family: 'Tw Cen MT', sans-serif;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      padding-top: 30px;
+      overflow: hidden;
+    }
+    h1, h3, ul, li, body, span {
+      margin: 0;
+    }
+    ul.star-ul {
+      padding-inline-start: 0px;
+    }
+    div.star-container, label.item-content {
+      padding-left: 20px;
+    }
+    li {
+      list-style: square outside none;
+      display: list-item;
+    }
+    body a {
+      color: firebrick;
+    }
+    body a:hover {
+      color: crimson;
+    }
+    footer {
+      text-align: center;
+      font-size: 15px;
+      padding: 10px 0;
+      overflow: hidden;
+    }
+    li.expandable-li {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    input[type=checkbox].expand-checkbox {
+      display: none;
+    }
+    input[type=checkbox].expand-checkbox:checked ~ label.item-content {
+      display: block;
+    }
+    input[type=checkbox].expand-checkbox:checked ~ label.expand-label div.star {
+      animation-name: spin;
+      animation-duration: 5000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    label.item-content {
+      display: none;
+    }
+    label.expand-label {
+      -moz-user-select: -moz-none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      cursor: pointer;
+
+      display:flex;
+      flex-direction:row;
+      overflow-wrap: break-word;
+    }
+    div#content {
+      padding: 0;
+    }
+    div#content span.header-span {
+      display:flex;
+      align-items:flex-end;
+    }
+    div#content span.header-span h3 {
+      padding-right: 5px;
+    }
+    div#content span.header-span i {
+      font-size: 12px;
+    }
+    div#content li {
+      padding: 5px 0;
+      color: firebrick;
+    }
+    div#content ul ul li {
+      padding: 0;
+      color: purple;
+    }
+    span#exitsection {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      font-size: 23px;
+      padding: 10px;
+      overflow: hidden;
+    }
+    div.star-container {
+      min-width:20px;
+      height:20px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding-right:8px;
+    }
+    div.star {
+      position: relative;
+      width: 0px;
+      height: 0px;
+    }
+    @keyframes spin {
+      from {
+        transform:rotate(0deg);
+      }
+      to {
+        transform:rotate(360deg);
+      }
+    }
+    div.star div {
+      position: absolute;
+      transform-origin: top left;
+      width: 0px;
+      height: 0px;
+      border-top: 10px solid transparent;
+      border-left: 7.2654px solid purple;
+      border-bottom: 10px solid transparent;
+    }
+    div.star-triangle-1 {
+      transform: rotate(90deg);
+      left: 10px;
+      top: -3.2492px;
+    }
+    div.star-triangle-2 {
+      transform: rotate(162deg);
+      left: 6.18034px;
+      top: 8.50651px;
+    }
+    div.star-triangle-3 {
+      transform: rotate(18deg);
+      left: 0px;
+      top: -10.51462px;
+    }
+	  @media screen and (max-width: 800px) {
+      body {
+        padding: 0 15px;
+      }
+      div.star-container, label.item-content {
+        padding-left: 0px;
+      }
+      ul {
+        padding-inline-start: 20px;
+      }
+      ul.star-ul {
+        padding-inline-start: 0px;
+      }
+    }
+  </style>
 </head>
 <body>
-	<header>
-		<h1>Jason's Projects</h1>
-		<span>to August 24, 2019 </span>
-	</header>
-	<div id="content">
-		<h3>Programs</h3>
-		<ul>
-			<li>
-				<button class="expandable" type="submit" formaction="https://hackage.haskell.org/package/graphql-w-persistent">
-					<a href="https://www.github.com/jasonsychau/graphql-w-persistent/">graphql-w-persistent: GraphQL interface middleware for SQL databases</a>
-					<ul>
-						<li>most downloads as a GraphQL Hackage package</li>
-						<li>project-language agnostic middleware add-on</li>
-					</ul>
-				</button>
-			</li>
-                        <li><a href="https://GitHub.com/jasonsychau/memobot">A companion to short story lovers</a></li>
-			<li><a href="https://surveyshuttles.jasonsychau.com">SurveyShuttles: poll hosting web application designed to bring together pollsters' thoughts and respondents' understanding.</a></li>
-			<li>
-				<button class="expandable" type="submit" formaction="https://companyclock.jasonsychau.com">
-					<a href="https://companyclock.jasonsychau.com">CompanyClock: iOS application timekeeper and notification sender</a>
-					<ul>
-						<li>Core Data and Cloudkit enabled for data storage on device or among devices on the cloud</li>
-						<li>interactive notifications for better tracking of individualized timers</li>
-					</ul>
-				</button>
-			</li>
-			<li><a href="https://github.com/jasonsychau/Canvas-Education-Management-API_app">UBC ToDos: iOS application to order, list, and due-date notify student assignments with a direct link to online quizzes wherein information is collected from Canvas online education platform</a></li>
-			<li><a href="https://github.com/ncsuarc/ids/pull/20/commits/cf2f3d6ef220fbd37f48adb569aeaaa981d8dbe6">ids: contributed single frame capture function for IDS cameras in Python interface library</a></li>
-		</ul>
-		<br />
-		<h3>Articles and forum replies</h3>
-		<ul>
-			<li><a href="https://medium.com/@jasonsychau/the-heros-between-1-1-ionos-domain-name-and-an-heroku-app-84386e71f4bd">Medium article on redirecting traffic from DNS host to Heroku</a></li>
-			<li><a href="https://medium.com/@jasonsychau/add-graphql-interface-to-your-pre-existing-mysql-postgresql-database-ce1e52214c3c">Medium article for graphql-w-persistent about instructions for adding GraphQL mask on MySQL and PostgreSQL databases by AWS Lambda</a></li>
-                        <li><a href="https://medium.com/@jasonsychau/block-diagrams-for-detailed-and-large-scale-functional-programming-systems-2f1b2e744414">Medium article for comparing diagrams for functional programming programs</a></li>
-			<li><a href="https://github.com/JuliaPlots/Plots.jl/issues/1720">response for a solution to failing to build julia plotting library</a></li>
-		</ul>
-	</div>
-	<span id="exitsection"><a id="gobacklink" href="https://www.jasonsychau.com">Main page</a></span>
-	<footer>Copyright &copy; Jason Chau</footer>
+  <header>
+    <h1>Jason's Portfolio</h1>
+    <span>to January 03, 2023 </span>
+  </header>
+  <div id="content">
+    <span class="header-span"><h3>Programs</h3><i>(click item to expand info)</i></span>
+    <ul class="star-ul">
+        <li class="expandable-li">
+            <input type="checkbox" id="surveyshuttles-checkbox" class="expand-checkbox"></input>
+            <label for="surveyshuttles-checkbox" class="item-content">
+                <ul>
+                  <li>web application to publish question forms</li>
+                  <li>every question and answer supported by one or more re-wording(s) to emphasize expression over objective words</li>
+                	<li><a href="https://surveyshuttles.jasonsychau.com">Go to site</a></li>
+                </ul>
+            </label>
+            <label class="expand-label" for="surveyshuttles-checkbox">
+              <div class="star-container">
+                <div class="star">
+                  <div class="star-triangle-1"></div>
+                  <div class="star-triangle-2"></div>
+                  <div class="star-triangle-3"></div>
+                </div>
+              </div>
+              SurveyShuttles: ReactJS, AWS (Lambda, API Gateway, S3), JavaScript
+            </label>
+        </li>
+        <li class="expandable-li">
+            <input type="checkbox" id="shufflestack-checkbox" class="expand-checkbox"></input>
+            <label for="shufflestack-checkbox" class="item-content">
+                <ul>
+                  <li>encapsulation of animated reorder of dom elements in a list</li>
+                  <li>adjustable animation duration, per item delay</li>
+                  <li>slots can be occupied by any DOM element (not only React components or plain text)</li>
+                  <li><a href="https://github.com/jasonsychau/shufflestack/pkgs/npm/shufflestack">Go to package page</a></li>
+                </ul>
+            </label>
+            <label class="expand-label" for="shufflestack-checkbox">
+              <div class="star-container">
+                <div class="star">
+                  <div class="star-triangle-1"></div>
+                  <div class="star-triangle-2"></div>
+                  <div class="star-triangle-3"></div>
+                </div>
+              </div>
+              ShuffleStack: ReactJS, TypeScript, animations, CSS
+            </label>
+        </li>
+        <li class="expandable-li">
+            <input type="checkbox" id="graphqlwpersistent-checkbox" class="expand-checkbox"></input>
+            <label for="graphqlwpersistent-checkbox" class="item-content">
+                <ul>
+                    <li>a translator for GraphQL to SQL and relational db tuples to nested objects</li>
+                    <li>aggregates data, uses fewest(?) queries, supports entities represented by multiple tables (interfaces and type hierarchies)</li>
+                    <li><a href="https://www.github.com/jasonsychau/graphql-w-persistent/">Go to support page</a></li>
+                </ul>
+            </label>
+            <label class="expand-label" for="graphqlwpersistent-checkbox">
+              <div class="star-container">
+                <div class="star">
+                    <div class="star-triangle-1"></div>
+                    <div class="star-triangle-2"></div>
+                    <div class="star-triangle-3"></div>
+                </div>
+              </div>
+              graphql-w-persistent: Haskell, open-source, middleware, SQL
+            </label>
+        </li>
+        <li class="expandable-li">
+            <input type="checkbox" id="relayandcontainers-checkbox" class="expand-checkbox"></input>
+            <label for="relayandcontainers-checkbox" class="item-content">
+                <ul>
+                    <li>set of programs to run in Docker containers to organize a queue for containers to be run in sequence</li>
+                    <li>good for setup or data processing in one container while another container is supposed to wait</li>
+                    <li><a href="https://github.com/jasonsychau/RelayAndContainers">Go to support page</a></li>
+                </ul>
+            </label>
+            <label class="expand-label" for="relayandcontainers-checkbox">
+              <div class="star-container">
+                <div class="star">
+                    <div class="star-triangle-1"></div>
+                    <div class="star-triangle-2"></div>
+                    <div class="star-triangle-3"></div>
+                </div>
+              </div>
+              RelayAndContainers: Docker, C, distributed systems
+            </label>
+        </li>
+        <li class="expandable-li">
+            <input type="checkbox" id="companyclock-checkbox" class="expand-checkbox"></input>
+            <label for="companyclock-checkbox" class="item-content">
+                <ul>
+                    <li>iOS mobile application for timekeeping durations from events</li>
+                    <li>set reminders per event/task/occasion</li>
+                    <li>Core Data, Cloudkit, UIUserNotifications, UIKit, in-app purchases</li>
+                    <li>sync user data with all iOS devices connected to same iCloud account</li>
+                    <li>interactive notifications for better tracking of individualized timers</li>
+                    <li><a href="https://companyclock.jasonsychau.com">Go to support page</a></li>
+                </ul>
+            </label>
+            <label class="expand-label" for="companyclock-checkbox">
+              <div class="star-container">
+                <div class="star">
+                  <div class="star-triangle-1"></div>
+                  <div class="star-triangle-2"></div>
+                  <div class="star-triangle-3"></div>
+                </div>
+              </div>
+              CompanyClock: iOS, Swift
+            </label>
+        </li>
+        <li class="expandable-li">
+            <input type="checkbox" id="ubctodos-checkbox" class="expand-checkbox"></input>
+            <label for="ubctodos-checkbox" class="item-content">
+                <ul>
+                  <li>mobile application to chonologically order and list unfinished assignments</li>
+                  <li>in-app links to online quizzes</li>
+                  <li>UIUserNotifications for upcoming due dates</li>
+                  <li>data is collected from Canvas online education API</li>
+                	<li><a href="https://github.com/jasonsychau/Canvas-Education-Management-API_app">Go to support page</a></li>
+                </ul>
+            </label>
+            <label class="expand-label" for="ubctodos-checkbox">
+              <div class="star-container">
+                <div class="star">
+                  <div class="star-triangle-1"></div>
+                  <div class="star-triangle-2"></div>
+                  <div class="star-triangle-3"></div>
+                </div>
+              </div>
+              UBC ToDos: iOS, Swift, third-party APIs
+            </label>
+        </li>
+        <li class="expandable-li">
+            <input type="checkbox" id="javalite-checkbox" class="expand-checkbox"></input>
+            <label for="javalite-checkbox" class="item-content">
+                <ul>
+                    <li>contributed feature to order smaller groups of tuples by joined tupled data</li>
+                    <li><a href="https://github.com/javalite/javalite/pull/1034">Go to pull request</a></li>
+                </ul>
+            </label>
+            <label class="expand-label" for="javalite-checkbox">
+              <div class="star-container">
+                <div class="star">
+                    <div class="star-triangle-1"></div>
+                    <div class="star-triangle-2"></div>
+                    <div class="star-triangle-3"></div>
+                </div>
+              </div>
+              JavaLite: Java, SQL, database ORM
+            </label>
+        </li>
+        <li class="expandable-li">
+            <input type="checkbox" id="memobot-checkbox" class="expand-checkbox"></input>
+            <label for="memobot-checkbox" class="item-content">
+                <ul>
+                  <li>a companion to short story lovers</li>
+                  <li>using ML NLP solutions as building blocks for QA bot</li>
+                	<li><a href="https://GitHub.com/jasonsychau/memobot">Go to support page</a></li>
+                </ul>
+            </label>
+            <label class="expand-label" for="memobot-checkbox">
+              <div class="star-container">
+                <div class="star">
+                  <div class="star-triangle-1"></div>
+                  <div class="star-triangle-2"></div>
+                  <div class="star-triangle-3"></div>
+                </div>
+              </div>
+              Memobot: Java, AI, NLP
+            </label>
+        </li>
+        <li class="expandable-li">
+            <input type="checkbox" id="idsrepo-checkbox" class="expand-checkbox"></input>
+            <label for="idsrepo-checkbox" class="item-content">
+                <ul>
+                    <li>contributed single frame capture function for IDS cameras in Python interface library</li>
+                    <li>pre-reading operation instructions in equipment provider manual</li>
+                    <li><a href="https://github.com/ncsuarc/ids/pull/20/commits/cf2f3d6ef220fbd37f48adb569aeaaa981d8dbe6">Go to site</a></li>
+                </ul>
+            </label>
+            <label class="expand-label" for="idsrepo-checkbox">
+              <div class="star-container">
+                <div class="star">
+                  <div class="star-triangle-1"></div>
+                  <div class="star-triangle-2"></div>
+                  <div class="star-triangle-3"></div>
+                </div>
+              </div>
+              ids: Python, C, hardware operation
+            </label>
+        </li>
+    </ul>
+    <br />
+    <span class="header-span">
+        <h3>Articles and forum replies</h3>
+        <i>(click to go to article)</i>
+    </span>
+    <ul>
+        <li><a href="https://medium.com/@jasonsychau/the-heros-between-1-1-ionos-domain-name-and-an-heroku-app-84386e71f4bd">Medium article on redirecting traffic from DNS host to Heroku</a></li>
+        <li><a href="https://medium.com/@jasonsychau/add-graphql-interface-to-your-pre-existing-mysql-postgresql-database-ce1e52214c3c">Medium article for graphql-w-persistent about instructions for adding GraphQL mask on MySQL and PostgreSQL databases by AWS Lambda</a></li>
+                    <li><a href="https://medium.com/@jasonsychau/block-diagrams-for-detailed-and-large-scale-functional-programming-systems-2f1b2e744414">Medium article for comparing diagrams for functional programming programs</a></li>
+        <li><a href="https://github.com/JuliaPlots/Plots.jl/issues/1720">response for a solution to failing to build julia plotting library</a></li>
+    </ul>
+  </div>
+  <span id="exitsection"><a id="gobacklink" href="https://www.jasonsychau.com">Main page</a></span>
+  <footer>Copyright &copy; Jason Chau</footer>
 </body>
 </html>
